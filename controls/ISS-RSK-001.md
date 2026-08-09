@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-RSK-001  
 **Control:** Security Risk Assessment and Register  
-**Status:** Defined  
+**Status:** Implemented  
 **Control owner:** Security Authority  
 **Control operator:** Security Authority  
 **Frequency:** At least quarterly and after material change
@@ -112,6 +112,24 @@ If the available facts reasonably support two adjacent levels and the ambiguity
 cannot yet be resolved, the higher level shall be used until the uncertainty is
 resolved.
 
+## Applicability
+
+A risk candidate may describe a future product, customer, deployment, support,
+or service boundary that does not currently exist.
+
+Such a candidate may remain:
+
+- `Applicability: FUTURE_BOUNDARY`;
+- likelihood, impact, and rating `UNASSESSED`; and
+- status `IDENTIFIED`.
+
+A future-boundary candidate does not block ISS-RSK-001 implementation when the
+review explicitly confirms that the underlying boundary is not currently
+operating.
+
+The risk must be assessed when that boundary becomes current or a material
+change otherwise makes the risk applicable.
+
 ## Treatment
 
 Permitted treatment decisions are:
@@ -153,7 +171,8 @@ create independent review.
 
 Risk status shall use one of:
 
-- `IDENTIFIED` — risk is recorded but the initial assessment is not yet complete;
+- `IDENTIFIED` — risk is recorded but the initial assessment is not yet complete
+  or the applicable future boundary is not yet current;
 - `OPEN` — risk is assessed and requires continued governance;
 - `TREATMENT_IN_PROGRESS` — active treatment work is underway;
 - `ACCEPTED` — residual risk has been explicitly accepted by the authorized
@@ -187,6 +206,7 @@ Each risk review shall identify:
 - review authority;
 - exact governed state reviewed;
 - risks added, removed, or materially changed;
+- applicability decisions;
 - likelihood and impact decisions;
 - treatment decisions;
 - accepted risks;
@@ -223,7 +243,8 @@ ISS-RSK-001 is not operating as required when:
 
 - a known material risk is intentionally omitted;
 - likelihood or impact is manipulated to reduce the derived rating;
-- a risk is represented as assessed without an actual assessment;
+- a currently applicable risk is represented as assessed without an actual
+  assessment;
 - a High or Critical risk has neither active treatment nor explicit authorized
   acceptance;
 - an acceptance is used to bypass a mandatory control without the required
@@ -234,17 +255,14 @@ ISS-RSK-001 is not operating as required when:
 
 ## Implementation state
 
-This document defines ISS-RSK-001 and its deterministic risk model.
+The initial currently applicable material risks have been assessed, assigned,
+rated, and given treatment decisions.
 
-The current register contains identified risks awaiting the first formal risk
-assessment.
+Future-boundary risk candidates remain explicitly identified and unassessed
+until their underlying boundary becomes current.
 
-ISS-RSK-001 shall remain `Defined` until:
+ISS-RSK-001 is `Implemented`.
 
-1. the initial risk review is performed;
-2. material risks have accountable owners;
-3. likelihood and impact are assessed;
-4. derived ratings and treatment decisions are recorded;
-5. required target and next-review dates are established; and
-6. the review record and machine-readable control state are updated
-   consistently.
+Implementation means the risk process is operating. It does not mean all open
+risk has been eliminated, all treatment work is complete, or any independent
+risk assessment has occurred.

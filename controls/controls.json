@@ -15,7 +15,7 @@
       "objective": "Identify, evaluate, assign, treat, and review material security risks.",
       "owner": "security_authority",
       "frequency": "quarterly_and_material_change",
-      "status": "defined"
+      "status": "implemented"
     },
     {
       "control_id": "ISS-IAM-001",
