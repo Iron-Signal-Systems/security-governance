@@ -31,7 +31,7 @@
       "objective": "Review privileged accounts and authority for continued necessity and appropriateness.",
       "owner": "security_authority",
       "frequency": "quarterly",
-      "status": "defined"
+      "status": "implemented"
     },
     {
       "control_id": "ISS-ENG-001",
