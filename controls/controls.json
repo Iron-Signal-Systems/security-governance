@@ -5,7 +5,7 @@
       "control_id": "ISS-GOV-001",
       "title": "Security governance review",
       "objective": "Review the organizational security governance system for continued suitability and effectiveness.",
-      "owner": "company_authority",
+      "owner": "governance_authority",
       "frequency": "annual_and_material_change",
       "status": "defined"
     },
@@ -65,7 +65,7 @@
       "control_id": "ISS-BCP-001",
       "title": "Business continuity and recovery",
       "objective": "Maintain and exercise recovery capabilities proportionate to operational risk.",
-      "owner": "company_authority",
+      "owner": "governance_authority",
       "frequency": "annual_and_material_change",
       "status": "defined"
     },
@@ -73,7 +73,7 @@
       "control_id": "ISS-SUP-001",
       "title": "Supplier security review",
       "objective": "Assess material suppliers before use and periodically thereafter.",
-      "owner": "company_authority",
+      "owner": "governance_authority",
       "frequency": "before_use_and_periodic",
       "status": "defined"
     },

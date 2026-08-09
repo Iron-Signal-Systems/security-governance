@@ -8,9 +8,25 @@
 
 This repository defines the organizational security governance system for Iron Signal Systems.
 
-It governs company-level security responsibilities including risk management, identity and access management, incident response, business continuity, supplier security, information classification, security awareness, organizational exceptions, management review.
+It governs organizational security responsibilities including risk management, identity and access management, incident response, business continuity, supplier security, information classification, security awareness, organizational exceptions, and governance review.
 
 It does not replace the Iron Signal Repository Assurance Standard (ISRAS). ISRAS remains the engineering assurance authority for Iron Signal Systems repositories and software lifecycle controls.
+
+## Current organizational state
+
+Iron Signal Systems is currently operated as a solo-developed project and has
+not been formed as a separate legal business entity.
+
+This governance system applies to software, repositories, infrastructure,
+information, services, and other work conducted under the Iron Signal Systems
+name.
+
+Governance roles describe responsibilities and authority. They do not imply the
+existence of employees, officers, departments, a corporation, an LLC, or another
+separate legal entity.
+
+The governance model shall be reviewed when the organizational or legal
+structure materially changes.
 
 ## Authority boundaries
 

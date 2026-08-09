@@ -2,9 +2,28 @@
 
 ## Purpose
 
-Iron Signal Systems maintains a security governance system to protect the confidentiality, integrity, availability, authenticity, and recoverability of company information, software, infrastructure, customer systems, and services.
+Iron Signal Systems maintains a security governance system to protect the confidentiality, integrity, availability, authenticity, and recoverability of Iron Signal Systems information, software, infrastructure, customer systems, and services.
 
 Security governance establishes organizational authority and accountability. It does not replace product engineering standards or product-specific security requirements.
+
+## Current organizational state
+
+Iron Signal Systems is currently operated as a solo-developed project and has
+not been formed as a separate legal business entity.
+
+This governance system governs activities performed under the Iron Signal
+Systems name. Governance roles identify responsibilities and authority and do
+not imply the existence of employees, officers, departments, a corporation, an
+LLC, or another separate legal entity.
+
+The current Governance Authority may hold multiple governance and engineering
+roles because only one person presently exercises those responsibilities.
+
+Role assignment does not create independence. A person shall not represent
+review of their own work as independent review.
+
+The governance structure shall be revised when material organizational, legal,
+personnel, or authority changes make the current model inaccurate.
 
 ## Governance boundaries
 
@@ -57,9 +76,9 @@ Automation, separate accounts, separate cryptographic keys, or artificial-intell
 
 Security governance authority shall be assigned explicitly.
 
-An individual may temporarily perform more than one role while Iron Signal Systems remains small. Where independence is required, the same individual shall not claim independent review of their own work.
+A person may perform more than one governance role while Iron Signal Systems is operated by one person or limited personnel. Where independence is required, the same person shall not claim independent review of their own work.
 
-Required independent functions may be performed by qualified external parties when internal personnel are insufficient.
+Required independent functions may be performed by qualified external parties when the available personnel cannot satisfy the required independence.
 
 ## Control model
 

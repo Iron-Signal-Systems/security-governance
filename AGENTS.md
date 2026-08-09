@@ -4,6 +4,7 @@ This repository defines Iron Signal Systems organizational security governance.
 
 ## Working rules
 
+- Do not describe Iron Signal Systems as a corporation, LLC, employer, or separate legal entity unless that status actually exists and the governance boundary has been updated.
 - Do not claim a control is implemented unless it is actually operating.
 - Do not claim independent review when the same person performed and reviewed the work.
 - Keep organizational governance separate from ISRAS engineering authority.
