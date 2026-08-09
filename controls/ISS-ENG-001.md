@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-ENG-001
 **Control:** Govern Software Engineering Through ISRAS
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Engineering Authority
 **Control operator:** Engineering Authority
 **Frequency:** Continuous and upon repository, accepted-release, adoption, upgrade, or engineering-boundary change
@@ -211,9 +211,15 @@ ISS-ENG-001 is not operating as required when:
 
 ## Implementation state
 
-ISS-ENG-001 is currently `Defined`.
+The initial repository engineering-governance review has been completed for the
+current material repository boundary.
 
-It becomes `Implemented` when the current material repository boundary has been
-reviewed, each repository has a truthful engineering-governance classification,
-the current accepted ISRAS authority has been recorded, and open adoption actions
-have been retained.
+The current accepted ISRAS authority, consuming-project pin state, unsupported
+profile boundaries, and open adoption review action are retained in the
+engineering-governance register and initial review record.
+
+ISS-ENG-001 is `Implemented`.
+
+Implementation does not mean every repository is ISRAS-adopted, that every
+repository must immediately upgrade to the newest accepted release, that open
+engineering actions are closed, or that independent review has occurred.
