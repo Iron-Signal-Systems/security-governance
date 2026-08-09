@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-VUL-001  
 **Control:** Vulnerability Identification and Remediation  
-**Status:** Defined  
+**Status:** Implemented  
 **Control owner:** Security Authority / Engineering Authority  
 **Control operator:** Security Authority / Engineering Authority  
 **Frequency:** Continuous identification with risk-based remediation and review
@@ -43,8 +43,7 @@ The current ISS-VUL-001 boundary includes, as applicable:
 
 - the primary ISS development and administrative workstation;
 - operating-system and installed-package vulnerabilities affecting that system;
-- the active local Atlas development PostgreSQL service and its underlying
-  software/package boundary;
+- the active local Atlas development PostgreSQL package/software boundary;
 - vulnerabilities affecting authentication, signing, recovery, or administrative
   tooling used to operate ISS assets;
 - authoritative software vulnerability findings produced by applicable
@@ -100,8 +99,11 @@ Each material organizational vulnerability finding shall include:
 - related risk, control, exception, or authoritative engineering record where
   applicable.
 
-Sensitive exploit detail shall not be placed in the public register when doing
-so would materially increase risk.
+Sensitive exploit or currently exposed package/CVE detail shall not be placed in
+the public register when doing so would materially increase risk.
+
+Protected supporting detail may be retained outside Git history and bound to the
+public review by cryptographic digest.
 
 ## Severity
 
@@ -217,6 +219,10 @@ Review and operating records are retained under:
 Authoritative engineering records remain in the engineering system that owns
 them and may be referenced rather than copied.
 
+Protected local supporting detail may be retained outside Git history. When used,
+the public review record shall identify the supporting record type and a
+cryptographic digest sufficient to detect later substitution.
+
 ## Independence
 
 Routine vulnerability identification, remediation, and verification may be
@@ -242,14 +248,15 @@ ISS-VUL-001 is not operating as required when:
 
 ## Implementation state
 
-This document defines ISS-VUL-001, the organizational vulnerability boundary,
-disposition model, remediation windows, and record requirements.
+The initial organizational vulnerability review has been completed for the
+current coverage boundary.
 
-ISS-VUL-001 remains `Defined` until:
+Current Arch operating-system/package coverage is operating, material findings
+have been assigned stable organizational identifiers, severity, disposition, and
+target dates, and known coverage limitations are explicit.
 
-1. the current organizational vulnerability coverage boundary is reviewed;
-2. current coverage sources and limitations are recorded;
-3. an initial vulnerability review is performed;
-4. identified material findings, if any, receive disposition and target dates;
-5. the initial review record is retained; and
-6. the catalog and machine-readable control registry are updated consistently.
+ISS-VUL-001 is `Implemented`.
+
+Implementation does not mean the current vulnerability count is zero, that all
+findings are remediated, that all repositories have identical engineering
+coverage, or that any independent assessment has occurred.
