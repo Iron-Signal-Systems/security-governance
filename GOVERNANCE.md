@@ -27,7 +27,7 @@ personnel, or authority changes make the current model inaccurate.
 
 ## Governance boundaries
 
-### Corporate security governance
+### Organizational security governance
 
 This repository governs organizational matters including:
 
@@ -42,7 +42,7 @@ This repository governs organizational matters including:
 - security awareness;
 - compliance obligations;
 - organizational exceptions;
-- management review; and
+- governance review; and
 - independent external assessment where required.
 
 ### Engineering assurance
@@ -51,7 +51,7 @@ The Iron Signal Repository Assurance Standard (ISRAS) is the authoritative engin
 
 ISRAS governs applicable repository, source, testing, validation, component, vulnerability, change, acceptance, release, deployment-verification, recovery, historical-verification, and related engineering-assurance requirements.
 
-Corporate governance may inherit results produced by ISRAS and shall not duplicate an ISRAS control when the engineering requirement is already governed authoritatively by ISRAS.
+Organizational governance may inherit results produced by ISRAS and shall not duplicate an ISRAS control when the engineering requirement is already governed authoritatively by ISRAS.
 
 ## Governing principles
 
@@ -130,7 +130,7 @@ Iron Signal Systems shall retain sufficient records to determine whether require
 
 Sensitive operational records shall be protected according to their information classification and shall not be placed in a public repository merely to demonstrate compliance.
 
-## Management review
+## Governance review
 
 Security governance shall be reviewed periodically and after material changes including significant incidents, substantial organizational changes, materially different technologies or services, significant requirement changes, and findings from internal or independent review.
 
