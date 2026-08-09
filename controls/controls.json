@@ -7,7 +7,7 @@
       "objective": "Review the organizational security governance system for continued suitability and effectiveness.",
       "owner": "governance_authority",
       "frequency": "annual_and_material_change",
-      "status": "defined"
+      "status": "implemented"
     },
     {
       "control_id": "ISS-RSK-001",

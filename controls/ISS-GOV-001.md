@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-GOV-001  
 **Control:** Security Governance Review  
-**Status:** Defined  
+**Status:** Implemented  
 **Control owner:** Governance Authority  
 **Control operator:** Governance Authority  
 **Frequency:** At least annually and after material change
@@ -136,11 +136,11 @@ ISS-GOV-001 is not operating as required when:
 
 ## Implementation state
 
-The existence of this document establishes the control definition only.
+The Governance Authority assignment is established and the first governance
+review has been completed and retained.
 
-ISS-GOV-001 shall remain `Defined` until:
+ISS-GOV-001 is `Implemented`.
 
-1. the Governance Authority assignment is established;
-2. the first governance review is completed;
-3. the required review record is retained; and
-4. the control catalog and machine-readable registry are updated consistently.
+Implementation does not mean every organizational control is complete, that the
+governance system has been independently assessed, or that the initial review
+result was `PASS`.
