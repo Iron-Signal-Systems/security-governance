@@ -1,0 +1,25 @@
+# ISS Security Control Catalog
+
+This catalog defines the initial organizational controls. A control is not considered fully implemented merely because it appears in this file.
+
+| ID | Control | Owner | Frequency / Trigger | Initial status |
+|---|---|---|---|---|
+| ISS-GOV-001 | Security governance review | Company authority | Annual + material change | Defined |
+| ISS-RSK-001 | Security risk assessment and register | Security authority | Quarterly + material change | Defined |
+| ISS-IAM-001 | Account provisioning and removal | System owner | Event-driven | Defined |
+| ISS-IAM-002 | Privileged-access review | Security authority | Quarterly | Defined |
+| ISS-ENG-001 | Govern software engineering through ISRAS | Engineering authority | Continuous | Defined |
+| ISS-VUL-001 | Vulnerability identification and remediation | Security / engineering | Continuous | Defined |
+| ISS-IR-001 | Security incident response | Security authority | Event + annual exercise | Defined |
+| ISS-BCP-001 | Business continuity and recovery | Company authority | Annual + material change | Defined |
+| ISS-SUP-001 | Supplier security review | Company authority | Before use + periodic review | Defined |
+| ISS-AST-001 | Information and system inventory | System owner | Continuous + annual review | Defined |
+| ISS-TRN-001 | Security awareness | Security authority | Onboarding + annual | Defined |
+| ISS-EXC-001 | Security exception governance | Security authority | Event-driven | Defined |
+
+## Status meanings
+
+- `Defined`: requirement exists but operating history may not yet exist.
+- `Implemented`: the control is operating and required records are being retained.
+- `Verified`: the control has completed its required internal review.
+- `Externally Assessed`: an independent qualified party has assessed the applicable control boundary.

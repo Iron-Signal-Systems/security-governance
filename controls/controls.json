@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "controls": [
+    {
+      "control_id": "ISS-GOV-001",
+      "title": "Security governance review",
+      "objective": "Review the organizational security governance system for continued suitability and effectiveness.",
+      "owner": "company_authority",
+      "frequency": "annual_and_material_change",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-RSK-001",
+      "title": "Security risk assessment and register",
+      "objective": "Identify, evaluate, assign, treat, and review material security risks.",
+      "owner": "security_authority",
+      "frequency": "quarterly_and_material_change",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-IAM-001",
+      "title": "Account provisioning and removal",
+      "objective": "Grant and remove access according to authorized business need.",
+      "owner": "system_owner",
+      "frequency": "event_driven",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-IAM-002",
+      "title": "Privileged access review",
+      "objective": "Review privileged accounts and authority for continued necessity and appropriateness.",
+      "owner": "security_authority",
+      "frequency": "quarterly",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-ENG-001",
+      "title": "Governed software engineering",
+      "objective": "Software developed by Iron Signal Systems operates under an accepted engineering assurance standard.",
+      "owner": "engineering_authority",
+      "frequency": "continuous",
+      "status": "defined",
+      "implementation": {
+        "type": "inherited",
+        "authority": "ISRAS"
+      }
+    },
+    {
+      "control_id": "ISS-VUL-001",
+      "title": "Vulnerability identification and remediation",
+      "objective": "Identify applicable vulnerabilities, assign disposition, and verify remediation or bounded exception.",
+      "owner": "security_and_engineering",
+      "frequency": "continuous",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-IR-001",
+      "title": "Security incident response",
+      "objective": "Prepare for, identify, contain, investigate, recover from, and review security incidents.",
+      "owner": "security_authority",
+      "frequency": "event_and_annual_exercise",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-BCP-001",
+      "title": "Business continuity and recovery",
+      "objective": "Maintain and exercise recovery capabilities proportionate to operational risk.",
+      "owner": "company_authority",
+      "frequency": "annual_and_material_change",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-SUP-001",
+      "title": "Supplier security review",
+      "objective": "Assess material suppliers before use and periodically thereafter.",
+      "owner": "company_authority",
+      "frequency": "before_use_and_periodic",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-AST-001",
+      "title": "Information and system inventory",
+      "objective": "Maintain an inventory of material information systems, services, repositories, and operational dependencies.",
+      "owner": "system_owner",
+      "frequency": "continuous_and_annual_review",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-TRN-001",
+      "title": "Security awareness",
+      "objective": "Provide security awareness appropriate to personnel responsibilities.",
+      "owner": "security_authority",
+      "frequency": "onboarding_and_annual",
+      "status": "defined"
+    },
+    {
+      "control_id": "ISS-EXC-001",
+      "title": "Security exception governance",
+      "objective": "Ensure exceptions are explicit, authorized, bounded, reviewed, and not silently perpetual.",
+      "owner": "security_authority",
+      "frequency": "event_driven",
+      "status": "defined"
+    }
+  ]
+}
