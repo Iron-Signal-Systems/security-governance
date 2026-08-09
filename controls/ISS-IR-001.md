@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-IR-001
 **Control:** Security Incident Response
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Security Authority
 **Control operator:** Security Authority / applicable System Owner
 **Frequency:** Event-driven + annual exercise
@@ -224,8 +224,11 @@ executed technical containment, or self-review is represented as independent.
 
 ## Implementation state
 
-ISS-IR-001 is currently `Defined`.
+The incident-response policy is active, the incident register exists, and the
+initial tabletop exercise `ISS-IR-EX-001` has been completed and retained.
 
-It becomes `Implemented` when the policy is active, the incident register exists,
-the current response boundary has been exercised, and the initial exercise record
-has been retained.
+ISS-IR-001 is `Implemented`.
+
+Implementation does not mean a real incident occurred, destructive containment
+was tested, every future incident will have the same facts, or independent
+review has occurred.
