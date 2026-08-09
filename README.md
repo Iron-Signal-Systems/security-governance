@@ -1,5 +1,11 @@
 # Iron Signal Systems Security Governance
 
+<p align="center">
+  <img src="docs/assets/security-governance-emblem.png"
+       alt="Iron Signal Systems Security Governance emblem"
+       width="720">
+</p>
+
 This repository defines the organizational security governance system for Iron Signal Systems.
 
 It governs company-level security responsibilities including risk management, identity and access management, incident response, business continuity, supplier security, information classification, security awareness, organizational exceptions, management review.

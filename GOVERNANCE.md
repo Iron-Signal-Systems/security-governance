@@ -74,8 +74,8 @@ Every governed organizational security control shall have a stable control ident
 - triggering conditions;
 - required control records;
 - inherited controls;
-- exception authority;
-- review boundary; and
+- exception authority; and
+- review boundary.
 
 ## Risk management
 
