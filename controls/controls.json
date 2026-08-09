@@ -51,7 +51,7 @@
       "objective": "Identify applicable vulnerabilities, assign disposition, and verify remediation or bounded exception.",
       "owner": "security_and_engineering",
       "frequency": "continuous",
-      "status": "defined"
+      "status": "implemented"
     },
     {
       "control_id": "ISS-IR-001",

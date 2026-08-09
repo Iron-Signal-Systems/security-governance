@@ -9,7 +9,7 @@ This catalog defines the initial organizational controls. A control is not consi
 | ISS-IAM-001 | Account provisioning and removal | System owner | Event-driven | Defined |
 | [ISS-IAM-002](ISS-IAM-002.md) | Privileged-access review | Security authority | Quarterly | Implemented |
 | ISS-ENG-001 | Govern software engineering through ISRAS | Engineering authority | Continuous | Defined |
-| ISS-VUL-001 | Vulnerability identification and remediation | Security / engineering | Continuous | Defined |
+| [ISS-VUL-001](ISS-VUL-001.md) | Vulnerability identification and remediation | Security / engineering | Continuous | Implemented |
 | ISS-IR-001 | Security incident response | Security authority | Event + annual exercise | Defined |
 | ISS-BCP-001 | Business continuity and recovery | Governance authority | Annual + material change | Defined |
 | ISS-SUP-001 | Supplier security review | Governance authority | Before use + periodic review | Defined |
