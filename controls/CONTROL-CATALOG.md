@@ -7,7 +7,7 @@ This catalog defines the initial organizational controls. A control is not consi
 | [ISS-GOV-001](ISS-GOV-001.md) | Security governance review | Governance authority | Annual + material change | Implemented |
 | [ISS-RSK-001](ISS-RSK-001.md) | Security risk assessment and register | Security authority | Quarterly + material change | Implemented |
 | ISS-IAM-001 | Account provisioning and removal | System owner | Event-driven | Defined |
-| [ISS-IAM-002](ISS-IAM-002.md) | Privileged-access review | Security authority | Quarterly | Defined |
+| [ISS-IAM-002](ISS-IAM-002.md) | Privileged-access review | Security authority | Quarterly | Implemented |
 | ISS-ENG-001 | Govern software engineering through ISRAS | Engineering authority | Continuous | Defined |
 | ISS-VUL-001 | Vulnerability identification and remediation | Security / engineering | Continuous | Defined |
 | ISS-IR-001 | Security incident response | Security authority | Event + annual exercise | Defined |

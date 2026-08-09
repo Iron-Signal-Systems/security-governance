@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-IAM-002  
 **Control:** Privileged Access Review  
-**Status:** Defined  
+**Status:** Implemented  
 **Control owner:** Security Authority  
 **Control operator:** Security Authority  
 **Frequency:** At least quarterly and after material privileged-access change
@@ -56,7 +56,7 @@ uncertain.
 
 ## Current review boundary
 
-The initial review shall consider, at minimum:
+The current review boundary includes:
 
 - Iron Signal Systems GitHub organization administrative authority;
 - GitHub SSH authentication authority;
@@ -85,17 +85,21 @@ identify the reason and how custody is controlled without publishing the secret.
 Privilege shall be limited to the minimum practical authority required for the
 current operating model.
 
-The current solo-project state may legitimately require one person to hold
-multiple privileged roles.
+The current solo-project state legitimately requires one person to hold multiple
+privileged roles across the presently operated boundary.
 
-That concentration shall be recorded as an operating fact and risk condition. It
-shall not be represented as personnel separation or independent oversight.
+That concentration is recorded as an operating fact and risk condition. It is
+not represented as personnel separation or independent oversight.
+
+Retention of privilege by this review does not mean the associated risk has been
+eliminated or accepted.
 
 ## Access decisions
 
 Each reviewed privileged authority shall receive one decision:
 
-- `RETAIN` — current privilege remains necessary and appropriately bounded;
+- `RETAIN` — current privilege remains necessary and appropriately bounded for
+  the reviewed operating need;
 - `REDUCE` — current authority is broader than necessary and shall be reduced;
 - `ROTATE` — credential or key material shall be replaced while authority
   remains required;
@@ -179,13 +183,14 @@ ISS-IAM-002 is not operating as required when:
 
 ## Implementation state
 
-This document defines ISS-IAM-002 and the initial privileged-access review
-boundary.
+The initial privileged-access review has been completed for the current
+operating boundary and retained in the governance repository.
 
-ISS-IAM-002 remains `Defined` until:
+Each currently identified material privileged authority has an explicit access
+decision and review date.
 
-1. the actual current privileged identities and authorities are reviewed;
-2. each material privilege receives an explicit decision;
-3. unresolved findings and corrective actions are recorded;
-4. the first review record is retained; and
-5. the catalog and machine-readable registry are updated consistently.
+ISS-IAM-002 is `Implemented`.
+
+Implementation does not mean associated privileged-access risks have been
+eliminated, that every future access-control control is implemented, or that
+independent review has occurred.

@@ -2,39 +2,47 @@
 
 ## Current state
 
-**ISS-IAM-002 status:** `Defined`  
-**Register state:** Initial privileged boundaries identified; first formal review pending  
-**Prepared:** 2026-08-09
+**ISS-IAM-002 status:** `Implemented`  
+**Register state:** Operating  
+**Initial review:** 2026-08-09  
+**Next required review:** 2026-11-09 or earlier upon material privileged-access change
 
 This register intentionally contains no passwords, private keys, tokens, recovery
-codes, or other authentication secrets.
+codes, usernames, or other authentication secrets.
 
-The entries identify privileged boundaries that must be reviewed. Exact account
-identifiers shall be added only where doing so is appropriate for the public
-governance repository.
+The current solo project operator personally controls the reviewed privileged
+authorities. Specific account identifiers are withheld from this public register
+where they are not necessary to establish the governance boundary.
 
 ## Register
 
 | Access ID | System / authority | Privileged capability | Identity / authority | Current need | Decision | Finding / action | Next review |
 |---|---|---|---|---|---|---|---|
-| ISS-PRIV-001 | Iron Signal Systems GitHub organization | Organization/repository administration | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current administrative identity, recovery path, and minimum required organization authority. | PENDING_REVIEW |
-| ISS-PRIV-002 | GitHub SSH authentication authority | Authenticated repository access using SSH authority | Local protected SSH authority; secret not recorded | PENDING_REVIEW | PENDING_REVIEW | Confirm authorized use, custody, and revocation/recovery path. | PENDING_REVIEW |
-| ISS-PRIV-003 | Git commit-signing authority | Produce signed Git history under trusted signing identity | Local protected signing authority; secret not recorded | PENDING_REVIEW | PENDING_REVIEW | Confirm authorized signing scope, custody, and revocation/recovery path. | PENDING_REVIEW |
-| ISS-PRIV-004 | Primary ISS development workstation | Root/sudo and system administration | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current administrative identity, privilege path, and necessity. | PENDING_REVIEW |
-| ISS-PRIV-005 | `ironsignalsystems.com` / DNS | Domain and DNS administration | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current administrative and recovery authority for the Squarespace-managed boundary. | PENDING_REVIEW |
-| ISS-PRIV-006 | `info@ironsignalsystems.com` | Mailbox administration and account recovery | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current mailbox/recovery authority and whether broader account administration exists. | PENDING_REVIEW |
-| ISS-PRIV-007 | Local Atlas PostgreSQL development service | Database administration | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current PostgreSQL administrative role(s), scope, and operational need. | PENDING_REVIEW |
-| ISS-PRIV-008 | `/src` Btrfs/Snapper recovery boundary | Snapshot, deletion, restore, and recovery administration | PENDING_REVIEW | PENDING_REVIEW | PENDING_REVIEW | Confirm current privileged identity and minimum required recovery authority. | PENDING_REVIEW |
+| ISS-PRIV-001 | Iron Signal Systems GitHub organization | Organization/repository administration | Individually controlled account of the sole project operator | Administer organization settings and current ISS repositories | RETAIN | Authority is currently necessary. `ISS-RISK-014` remains HIGH and open; continued protection/recovery and future privileged-access treatment remain required. | 2026-11-09 |
+| ISS-PRIV-002 | GitHub SSH authentication authority | Authenticated repository access using SSH authority | Local protected SSH authority controlled by the sole project operator | Push/pull and authenticated repository administration | RETAIN | Authority remains necessary. Secret material is not recorded. Revocation/recovery treatment remains part of access and continuity hardening. | 2026-11-09 |
+| ISS-PRIV-003 | Git commit-signing authority | Produce signed Git history under trusted signing identity | Local protected signing authority controlled by the sole project operator | Sign accepted repository history and governance changes | RETAIN | Authority remains necessary. `ISS-RISK-002` remains HIGH and open; signing revocation/recovery treatment is not closed by this review. | 2026-11-09 |
+| ISS-PRIV-004 | Primary ISS development workstation | sudo/root system administration | Normal user account with sudo/root elevation for administrative tasks | Install software, update the system, and perform required system administration | RETAIN | Privilege is retained for administrative tasks rather than represented as routine root operation. `ISS-RISK-015` remains HIGH and open. | 2026-11-09 |
+| ISS-PRIV-005 | `ironsignalsystems.com` / DNS | Domain and DNS administration | Personally controlled administrative/recovery authority | Maintain the ISS domain and DNS configuration | RETAIN | Authority remains necessary. Administrative and recovery protection remains subject to access and supplier governance. | 2026-11-09 |
+| ISS-PRIV-006 | `info@ironsignalsystems.com` | Mailbox administration and account recovery | Personally controlled mailbox/recovery authority | Operate and recover the current ISS administrative/contact mailbox | RETAIN | Authority remains necessary. Mailbox and recovery protection remains subject to access and supplier governance. | 2026-11-09 |
+| ISS-PRIV-007 | Local Atlas PostgreSQL development service | PostgreSQL administrative/superuser authority | Personally controlled local database administrative authority | Administer the active Atlas development PostgreSQL service | RETAIN | Administrative authority remains necessary for development administration. This review does not claim that application/runtime use requires superuser authority. | 2026-11-09 |
+| ISS-PRIV-008 | `/src` Btrfs/Snapper recovery boundary | Snapshot, deletion, restore, and recovery administration | sudo/root authority controlled by the sole project operator | Administer snapshots and perform required recovery operations | RETAIN | Privilege remains necessary for recovery administration. Backup/recovery adequacy is governed separately. | 2026-11-09 |
 
-## Review rule
+## Review result
 
-During the first formal review, each `PENDING_REVIEW` field shall be resolved
-from the actual operating state.
+No currently identified material privileged authority was found to be
+unauthorized or unnecessary for the present solo-project operating model.
 
-If a listed boundary does not provide a distinct privileged account or role, the
-review shall record the actual authority model rather than inventing one.
+All eight reviewed authorities receive `RETAIN`.
+
+This does not close the risks associated with concentrated administrative,
+authentication, signing, or workstation authority.
+
+## Maintenance rule
 
 New material privileged boundaries shall receive the next stable
 `ISS-PRIV-NNN` identifier.
 
 Identifiers shall not be reused.
+
+A material change to privileged authority triggers review before the normal
+quarterly date when necessary.
