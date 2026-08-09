@@ -2,11 +2,11 @@
 
 ## Control identity
 
-**Control ID:** ISS-VUL-001  
-**Control:** Vulnerability Identification and Remediation  
-**Status:** Implemented  
-**Control owner:** Security Authority / Engineering Authority  
-**Control operator:** Security Authority / Engineering Authority  
+**Control ID:** ISS-VUL-001
+**Control:** Vulnerability Identification and Remediation
+**Status:** Implemented
+**Control owner:** Security Authority / Engineering Authority
+**Control operator:** Security Authority / Engineering Authority
 **Frequency:** Continuous identification with risk-based remediation and review
 
 ## Objective
@@ -74,6 +74,31 @@ Applicable findings may originate from:
 - other technically credible sources.
 
 A scanner or feed is a source of findings, not the control itself.
+
+## Applicability triage
+
+Scanner, package-manager, feed, or advisory output identifies a candidate
+condition. It does not automatically prove that the governed asset is currently
+vulnerable.
+
+Before assigning or retaining an applicability-dependent disposition, the
+operator shall evaluate the actual technical boundary using information such as:
+
+- authoritative affected-version or fixed-version information;
+- installed and running component versions;
+- enabled features, drivers, protocols, or services;
+- actual exposure and operating state; and
+- authoritative supplier or engineering disposition where applicable.
+
+A candidate may be `NOT_APPLICABLE` when a documented technical basis
+demonstrates that the governed boundary is outside the affected condition.
+
+Where vulnerable capability exists but is intentionally prevented from operating,
+`MITIGATE` / `MITIGATED` may be used when the compensating control is verified.
+
+Continued scanner output after a supported technical disposition does not by
+itself invalidate that disposition. The finding shall be reevaluated when the
+source data or governed technical state materially changes.
 
 Scanner failure, stale coverage, unavailable data, or unsupported assets shall
 be recorded as a coverage limitation and shall not be represented as zero
