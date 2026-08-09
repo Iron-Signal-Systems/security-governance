@@ -1,22 +1,38 @@
 # Security Incident Response Policy
 
-## Objectives
+## Purpose
 
-Iron Signal Systems shall be able to identify, report, contain, investigate, recover from, and learn from security incidents.
+Iron Signal Systems shall respond to suspected or confirmed security incidents
+through a controlled process that prioritizes containment, truthful uncertainty,
+safe recovery, and reconstructable decisions.
 
-## Minimum process
+## Current organizational state
 
-1. Report and record the suspected incident.
-2. Assign an incident owner.
-3. Classify severity and affected boundary.
-4. Preserve relevant records and logs.
-5. Contain ongoing exposure where practical.
-6. Eradicate or remediate the cause.
-7. Recover affected systems or services.
-8. Validate recovery.
-9. Determine notification obligations.
-10. Perform a post-incident review for material incidents.
+Iron Signal Systems is currently operated as a solo-developed project. Response
+responsibilities are governance roles, not an invented SOC, team, legal
+department, or on-call organization.
 
-## Exercise
+## Requirements
 
-The incident-response process shall be exercised at least annually once ISS has active production or customer operational responsibilities.
+A material security event shall be triaged when it may affect confidentiality,
+integrity, availability, authenticity, recoverability, or trusted authority.
+
+The response shall distinguish event from incident, preserve unknown facts as
+unknown, assign severity, contain active risk, retain material records without
+publishing secrets, investigate/eradicate sufficiently for safe recovery,
+verify recovery, resolve notification applicability, update related controls
+where required, and retain supported closure.
+
+For critical/high incidents, containment shall not be delayed merely to complete
+administrative documentation.
+
+Where a system is suspected compromised, high-trust recovery should use a
+separate trusted context where practical. Emergency use of the suspected system
+shall be recorded as a limitation.
+
+External notification shall be based on an actual applicable obligation. The
+current baseline shall not invent customer or production notification duties.
+
+The response process shall be exercised at least annually and after material
+boundary change. A tabletop validates decision flow only; it does not prove
+destructive or provider-dependent actions were executed.
