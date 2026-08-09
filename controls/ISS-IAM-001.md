@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-IAM-001
 **Control:** Account Provisioning and Removal
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** System Owner
 **Control operator:** System Owner / Security Authority
 **Frequency:** Event-driven and upon material identity-boundary change
@@ -234,8 +234,18 @@ ISS-IAM-001 is not operating as required when:
 
 ## Implementation state
 
-ISS-IAM-001 is currently `Defined`.
+The initial account and material identity review has been completed for the
+current operating boundary.
 
-It becomes `Implemented` when the current material account/identity boundary has
-been reviewed, a current register has been established, and the initial
-operating record has been retained.
+A current non-sensitive account-access register and initial lifecycle review
+record are retained in the governance repository.
+
+No currently identified material account was found to lack an authorized
+operating purpose, and no current removal event was identified by the initial
+review.
+
+ISS-IAM-001 is `Implemented`.
+
+Implementation does not mean every future account is automatically authorized,
+that privileged-access risks are closed, or that independent review has
+occurred.
