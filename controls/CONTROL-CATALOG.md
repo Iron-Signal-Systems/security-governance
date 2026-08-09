@@ -13,7 +13,7 @@ This catalog defines the initial organizational controls. A control is not consi
 | ISS-IR-001 | Security incident response | Security authority | Event + annual exercise | Defined |
 | ISS-BCP-001 | Business continuity and recovery | Governance authority | Annual + material change | Defined |
 | ISS-SUP-001 | Supplier security review | Governance authority | Before use + periodic review | Defined |
-| [ISS-AST-001](ISS-AST-001.md) | Information and system inventory | System owner | Continuous + annual review | Defined |
+| [ISS-AST-001](ISS-AST-001.md) | Information and system inventory | System owner | Continuous + annual review | Implemented |
 | ISS-TRN-001 | Security awareness | Security authority | Onboarding + annual | Defined |
 | ISS-EXC-001 | Security exception governance | Security authority | Event-driven | Defined |
 

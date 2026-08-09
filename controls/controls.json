@@ -83,7 +83,7 @@
       "objective": "Maintain an inventory of material information systems, services, repositories, and operational dependencies.",
       "owner": "system_owner",
       "frequency": "continuous_and_annual_review",
-      "status": "defined"
+      "status": "implemented"
     },
     {
       "control_id": "ISS-TRN-001",

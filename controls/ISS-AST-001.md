@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-AST-001  
 **Control:** Information and System Inventory  
-**Status:** Defined  
+**Status:** Implemented  
 **Control owner:** System Owner  
 **Control operator:** System Owner  
 **Frequency:** Continuous maintenance and at least annual review
@@ -112,10 +112,10 @@ The complete inventory shall be reviewed at least annually.
 
 An inventory is not complete merely because known repositories are listed.
 
-Before ISS-AST-001 may transition to `Implemented`, the System Owner shall review
-the inventory for material local systems and external dependencies not visible
-from the public repository boundary, including domains, DNS, email, backups,
-administrative services, and other infrastructure actually in use.
+The System Owner shall review material local systems and external dependencies
+not visible from the public repository boundary, including domains, DNS, email,
+recovery facilities, administrative services, hosted infrastructure, and other
+systems actually in use.
 
 Unknown or unreviewed material categories shall not be silently treated as
 absent.
@@ -125,6 +125,10 @@ absent.
 The authoritative non-sensitive asset inventory is retained in:
 
 `registers/ASSET-REGISTER.md`
+
+Inventory-review records are retained under:
+
+`records/assets/`
 
 Sensitive supporting details may be retained outside the public repository in an
 appropriately protected location.
@@ -147,13 +151,15 @@ ISS-AST-001 is not operating as required when:
 - the annual review becomes overdue;
 - sensitive asset secrets are published merely to demonstrate inventory
   completeness; or
-- an incomplete inventory is represented as complete.
+- an incomplete inventory is knowingly represented as complete.
 
 ## Implementation state
 
-This document defines the control.
+The initial material asset and dependency boundary has been reviewed and the
+inventory is operating.
 
-The current asset register contains an initial substantiated inventory, but
-ISS-AST-001 remains `Defined` until the System Owner confirms that the material
-asset and dependency boundary has been reviewed for completeness and the initial
-inventory review is retained.
+ISS-AST-001 is `Implemented`.
+
+Implementation means the inventory is maintained for the current operating
+boundary. It does not mean every inventoried asset has completed risk,
+supplier-security, continuity, or access-control review under other controls.

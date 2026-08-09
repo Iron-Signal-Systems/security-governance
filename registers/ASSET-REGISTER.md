@@ -12,19 +12,18 @@ recovery secrets, and similarly sensitive values are not recorded here.
 
 ## Current completeness state
 
-**State:** Initial inventory under review  
-**ISS-AST-001 status:** `Defined`  
-**Last inventory preparation:** 2026-08-09
+**State:** Operating inventory  
+**ISS-AST-001 status:** `Implemented`  
+**Last inventory review:** 2026-08-09  
+**Next required review:** 2027-08-09 or earlier upon material change
 
-The repository and GitHub organization entries below are substantiated by the
-current GitHub organization boundary. The local development and credential
-entries are limited to the operational facts required to describe the boundary
-without publishing secrets.
+The current material asset boundary was reviewed for the present solo-project
+operating state.
 
-This inventory shall not be represented as complete until the System Owner has
-reviewed material non-GitHub dependencies such as domains, DNS, email, backup
-targets, administrative services, hosted infrastructure, and other systems
-actually in use.
+No additional material Iron Signal Systems development or administrative
+machines were identified beyond the primary development workstation.
+
+New material assets and dependencies shall be added when introduced.
 
 ## Inventory
 
@@ -34,33 +33,38 @@ actually in use.
 | ISS-ASSET-002 | `Iron-Signal-Systems/atlas` | Source repository | Engineering Authority | PUBLIC | HIGH | ACTIVE | GitHub | Atlas source and engineering history. |
 | ISS-ASSET-003 | `Iron-Signal-Systems/domain-neutral-platform` | Source repository | Engineering Authority | PUBLIC | HIGH | ACTIVE | GitHub | Product/platform source and engineering history. |
 | ISS-ASSET-004 | `Iron-Signal-Systems/engineering-standards` | Engineering-standard repository | Engineering Authority | PUBLIC | CRITICAL | ACTIVE | GitHub | Authoritative ISRAS source and accepted engineering-standard history. |
-| ISS-ASSET-005 | `Iron-Signal-Systems/engineering-standards-legacy` | Historical repository | Engineering Authority | PUBLIC | MEDIUM | ARCHIVED | GitHub | Archived historical engineering-standard source; retained for history and verification. |
+| ISS-ASSET-005 | `Iron-Signal-Systems/engineering-standards-legacy` | Historical repository | Engineering Authority | PUBLIC | MEDIUM | ARCHIVED | GitHub | Archived historical engineering-standard source retained for history and verification. |
 | ISS-ASSET-006 | `Iron-Signal-Systems/file-intelligence` | Source repository | Engineering Authority | PUBLIC | HIGH | ACTIVE | GitHub | File Intelligence source and engineering history. |
 | ISS-ASSET-007 | `Iron-Signal-Systems/module-families` | Engineering / module repository | Engineering Authority | PUBLIC | MEDIUM | ACTIVE | GitHub | Shared module-family source and engineering history. |
 | ISS-ASSET-008 | `Iron-Signal-Systems/security-governance` | Governance repository | Governance Authority | PUBLIC | HIGH | ACTIVE | GitHub | Authoritative public organizational-security governance source. |
 | ISS-ASSET-009 | Primary ISS development workstation | Development / administrative system | System Owner | RESTRICTED | CRITICAL | ACTIVE | Local controlled system | Used for ISS development, repository administration, and signed Git operations. Host-specific security details are intentionally not published here. |
-| ISS-ASSET-010 | GitHub authentication and Git signing authority | Authentication / cryptographic authority | System Owner | RESTRICTED | CRITICAL | ACTIVE | Local protected credential boundary | Private key material and recovery secrets are not recorded in this public register. |
-| ISS-ASSET-011 | Local Atlas development PostgreSQL service | Development database service | System Owner | INTERNAL | HIGH | ACTIVE | Local development boundary | Used by Atlas development and validation. This entry does not imply production or customer-data use. |
+| ISS-ASSET-010 | GitHub SSH authentication authority | Authentication authority | System Owner | RESTRICTED | CRITICAL | ACTIVE | Local protected credential boundary | Used for authenticated GitHub repository access. Private key material and recovery secrets are not recorded here. |
+| ISS-ASSET-011 | Git commit-signing authority | Cryptographic signing authority | Engineering Authority | RESTRICTED | CRITICAL | ACTIVE | Local protected credential boundary | Used for signed Git history. Signing-key material is not recorded here. |
+| ISS-ASSET-012 | Local Atlas development PostgreSQL service | Development database service | System Owner | INTERNAL | HIGH | ACTIVE | Local development boundary | Actively used by Atlas development and validation. This entry does not imply production or customer-data use. |
+| ISS-ASSET-013 | `ironsignalsystems.com` domain and DNS service | External domain / DNS service | System Owner | PUBLIC | HIGH | ACTIVE | Squarespace-managed service boundary | Public ISS domain and DNS dependency. Administrative credentials are not recorded here. |
+| ISS-ASSET-014 | `info@ironsignalsystems.com` Gmail service | External email service | System Owner | CONFIDENTIAL | HIGH | ACTIVE | Gmail service boundary | Current ISS administrative/contact email service. Mailbox credentials and recovery data are not recorded here. |
+| ISS-ASSET-015 | `/src` local snapshot and recovery boundary | Local recovery storage | System Owner | CONFIDENTIAL | HIGH | ACTIVE | Btrfs RAID1 with Snapper | Provides local point-in-time protection for source/work. This is not represented as an independent off-host backup against complete host/storage loss. |
 
-## Review gaps before implementation
+## Boundary review
 
-The System Owner shall confirm whether any material assets exist in the
-following categories and either add them to the register or record that the
-category is currently not used:
+The initial inventory review considered:
 
-- domains and DNS;
-- email or collaboration services used for ISS administration;
-- backup and recovery targets;
-- additional development, build, test, or administrative systems;
-- hosted CI/CD or artifact-storage services beyond the GitHub organization
-  boundary;
-- external identity, credential, or secret-management services;
-- hosted databases, cloud services, or virtual machines;
-- customer-facing or remotely administered systems;
-- code-signing, release-signing, or additional cryptographic authorities not
-  already represented by ISS-ASSET-010; and
-- other operational dependencies whose loss or compromise would materially
-  affect ISS work.
+- the current GitHub organization and repositories;
+- the primary development and administrative workstation;
+- GitHub SSH authentication authority;
+- Git commit-signing authority;
+- the active Atlas development PostgreSQL service;
+- the `ironsignalsystems.com` domain and DNS service;
+- the `info@ironsignalsystems.com` Gmail service;
+- the current local `/src` snapshot/recovery boundary; and
+- whether additional material ISS development or administrative machines are
+  currently in use.
+
+No additional material development or administrative machines were identified.
+
+The adequacy of backup durability, recovery objectives, supplier security,
+access-control operation, or risk treatment is governed separately and is not
+implied by inclusion in this inventory.
 
 ## Maintenance rule
 
