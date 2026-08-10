@@ -11,7 +11,7 @@ This catalog defines the initial organizational controls. A control is not consi
 | [ISS-ENG-001](ISS-ENG-001.md) | Govern software engineering through ISRAS | Engineering authority | Continuous | Implemented |
 | [ISS-VUL-001](ISS-VUL-001.md) | Vulnerability identification and remediation | Security / engineering | Continuous | Implemented |
 | [ISS-IR-001](ISS-IR-001.md) | Security incident response | Security authority | Event + annual exercise | Implemented |
-| ISS-BCP-001 | Business continuity and recovery | Governance authority | Annual + material change | Defined |
+| [ISS-BCP-001](ISS-BCP-001.md) | Business continuity and recovery | Governance authority | Annual + material change | Defined |
 | ISS-SUP-001 | Supplier security review | Governance authority | Before use + periodic review | Defined |
 | [ISS-AST-001](ISS-AST-001.md) | Information and system inventory | System owner | Continuous + annual review | Implemented |
 | ISS-TRN-001 | Security awareness | Security authority | Onboarding + annual | Defined |
