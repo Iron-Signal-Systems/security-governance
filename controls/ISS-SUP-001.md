@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-SUP-001
 **Control:** Supplier Security Review
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Governance Authority
 **Control operator:** Governance Authority / applicable System Owner or Security Authority
 **Frequency:** Before material use + periodic review + material change
@@ -235,8 +235,17 @@ Supplier review interacts with:
 
 ## Implementation state
 
-ISS-SUP-001 is currently `Defined`.
+The supplier-security policy is active.
 
-It becomes `Implemented` when the supplier-security policy is active, the current
-material supplier boundary has been reviewed, the supplier register is operating,
-and the initial review record is retained.
+The current material hosted-service boundary has been reviewed and recorded in
+the supplier register.
+
+Initial review `ISS-SUP-REV-001` is retained with result
+`PASS_WITH_OPEN_DEPENDENCY_ACTIONS`.
+
+ISS-SUP-001 is `Implemented`.
+
+Implementation does not establish that every provider capability is enabled in
+the applicable ISS account, that provider recovery has been technically
+validated, or that the current suppliers are suitable for future customer or
+regulated boundaries.
