@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-BCP-001
 **Control:** Business Continuity and Recovery
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Governance Authority
 **Control operator:** Governance Authority / applicable System Owner
 **Frequency:** Annual + material change
@@ -194,8 +194,16 @@ recovery gaps are omitted, or self-review is represented as independent.
 
 ## Implementation state
 
-ISS-BCP-001 is currently `Defined`.
+The continuity policy is active.
 
-It becomes `Implemented` when the continuity policy is active, the current
-material recovery boundary is classified, an initial recovery exercise is
-retained, and material recovery gaps are tracked.
+The current material recovery boundary has been classified in the continuity and
+recovery register.
+
+Initial exercise `ISS-BCP-EX-001` completed a read-only remote Git reconstruction
+test and retained the current limitations and open recovery actions.
+
+ISS-BCP-001 is `Implemented`.
+
+Implementation does not mean complete workstation recovery, independent off-host
+backup, database restore, credential recovery, supplier failover, or
+sole-operator succession has been fully validated.
