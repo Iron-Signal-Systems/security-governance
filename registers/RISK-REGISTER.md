@@ -10,6 +10,7 @@
 **Focused treatment review:** 2026-08-11 — `ISS-RISK-015`
 **Focused treatment review:** 2026-08-11 — `ISS-RISK-015` remediation reassessment
 **Focused treatment review:** 2026-08-11 — `ISS-RISK-005` dependency/build treatment
+**Focused treatment review:** 2026-08-11 — `ISS-RISK-001` sole-authority treatment
 **Next required review:** 2026-11-09 or earlier upon material change
 
 The current operating boundary has completed its first ISS-RSK-001 assessment.
@@ -22,7 +23,7 @@ be assessed when the applicable boundary becomes current.
 
 | ID | Risk | Applicability | Affected boundary / assets | Owner | Likelihood | Impact | Rating | Treatment | Treatment basis / action | Target | Status | Next review |
 |---|---|---|---|---|---:|---:|---|---|---|---|---|---|
-| ISS-RISK-001 | Loss of sole engineering-authority availability | CURRENT | Engineering Authority; all active engineering repositories | Governance Authority | 2 | 3 | HIGH (6) | REDUCE | Maintain reconstructable signed history and repository state; implement continuity/recovery procedures for loss of sole-authority availability. | 2026-11-09 | OPEN | 2026-11-09 |
+| ISS-RISK-001 | Loss of sole engineering-authority availability | CURRENT | Engineering Authority; all active engineering repositories | Governance Authority | 2 | 3 | HIGH (6) | REDUCE | Focused 2026-08-11 treatment review confirmed reconstructable repository and governance state reduces context loss but does not create another authorized human operator. The current solo-project boundary may pause during sole-operator unavailability. ISS-BCP-ACT-004 remains open and shall establish an appropriate continuity or succession path before future obligations require continued operation during operator unavailability. | 2026-11-09 | OPEN | 2026-11-09 |
 | ISS-RISK-002 | Compromise of release-signing authority | CURRENT | Git commit-signing authority; engineering repositories | Engineering Authority | 1 | 3 | MEDIUM (3) | REDUCE | Focused 2026-08-11 treatment review confirmed the required signing-authority separation, custody, passphrase, deliberate-use, duplicate-copy review, and verification conditions; a non-secret revocation/replacement/transition procedure is defined. Continue monitoring and separately treat workstation risk. | 2026-11-09 | MONITORING | 2026-11-09 |
 | ISS-RISK-003 | Loss or corruption of source repositories | CURRENT | GitHub organization; active and archived repositories; local source boundary | System Owner | 1 | 3 | MEDIUM (3) | REDUCE | Maintain remote Git repository history and local snapshots; evaluate stronger independent backup/recovery requirements under continuity controls. | 2026-11-09 | MONITORING | 2026-11-09 |
 | ISS-RISK-004 | Unauthorized access to customer information | FUTURE_BOUNDARY | Future customer-controlled information boundary | Security Authority | UNASSESSED | UNASSESSED | UNASSESSED | PENDING_REVIEW | No current customer-information boundary has been established in this governance baseline; assess before such data is handled. | BOUNDARY_ACTIVATION | IDENTIFIED | 2026-11-09 |
