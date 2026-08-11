@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-TRN-001
 **Control:** Security Awareness
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Security Authority
 **Control operator:** Security Authority
 **Frequency:** Before or at material access + annual + material change
@@ -106,8 +106,14 @@ or self-review is represented as independent review.
 
 ## Implementation state
 
-ISS-TRN-001 is currently `Defined`.
+The security-awareness policy is active.
 
-It becomes `Implemented` when the awareness policy is active, the current
-material human boundary has completed the required review, and the completion
-record is retained.
+The current material human boundary completed the initial required awareness
+review and affirmative acknowledgment under record `ISS-TRN-REV-001`.
+
+The awareness register is operating.
+
+ISS-TRN-001 is `Implemented`.
+
+Implementation does not create independent review, certify outside training, or
+establish a future employee/contractor training program that does not yet exist.
