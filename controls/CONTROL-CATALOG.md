@@ -14,7 +14,7 @@ This catalog defines the initial organizational controls. A control is not consi
 | [ISS-BCP-001](ISS-BCP-001.md) | Business continuity and recovery | Governance authority | Annual + material change | Implemented |
 | [ISS-SUP-001](ISS-SUP-001.md) | Supplier security review | Governance authority | Before use + periodic review | Implemented |
 | [ISS-AST-001](ISS-AST-001.md) | Information and system inventory | System owner | Continuous + annual review | Implemented |
-| ISS-TRN-001 | Security awareness | Security authority | Onboarding + annual | Defined |
+| [ISS-TRN-001](ISS-TRN-001.md) | Security awareness | Security authority | Onboarding + annual | Defined |
 | ISS-EXC-001 | Security exception governance | Security authority | Event-driven | Defined |
 
 ## Status meanings
