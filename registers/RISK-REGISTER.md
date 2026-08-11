@@ -7,6 +7,7 @@
 **Initial review:** 2026-08-09  
 **Focused treatment review:** 2026-08-10 — `ISS-RISK-014`
 **Focused treatment review:** 2026-08-11 — `ISS-RISK-002`
+**Focused treatment review:** 2026-08-11 — `ISS-RISK-015`
 **Next required review:** 2026-11-09 or earlier upon material change
 
 The current operating boundary has completed its first ISS-RSK-001 assessment.
@@ -33,7 +34,7 @@ be assessed when the applicable boundary becomes current.
 | ISS-RISK-012 | Compromise or loss of administrative email access | CURRENT | `info@ironsignalsystems.com`; Gmail service boundary | System Owner | 2 | 2 | MEDIUM (4) | REDUCE | Protect mailbox and recovery authority and include the service in supplier and access-control reviews. | 2026-11-09 | OPEN | 2026-11-09 |
 | ISS-RISK-013 | Complete loss of local work or recovery state before remote synchronization | CURRENT | Primary development workstation; `/src` Btrfs/Snapper recovery boundary | System Owner | 2 | 2 | MEDIUM (4) | REDUCE | Continue frequent remote synchronization and local snapshots; determine independent backup requirements under continuity/recovery governance. | 2026-11-09 | OPEN | 2026-11-09 |
 | ISS-RISK-014 | Compromise of GitHub organization administrative authority | CURRENT | Iron Signal Systems GitHub organization; GitHub SSH authentication authority | Security Authority | 2 | 3 | HIGH (6) | REDUCE | Focused 2026-08-10 treatment review found one or more required conditions incomplete or unknown. Detailed state is protected locally; complete the identified remediation and repeat the focused review. Recovery/revocation procedure is defined. | 2026-11-09 | OPEN | 2026-11-09 |
-| ISS-RISK-015 | Compromise of primary development and administrative workstation | CURRENT | Primary ISS development workstation; GitHub authentication; signing authority; local development data | Security Authority | 2 | 3 | HIGH (6) | REDUCE | Harden and patch the workstation, minimize installed services and privileges, protect authentication/signing material, and implement vulnerability/access-control governance. | 2026-11-09 | OPEN | 2026-11-09 |
+| ISS-RISK-015 | Compromise of primary development and administrative workstation | CURRENT | Primary ISS development workstation; GitHub authentication; signing authority; local development data | Security Authority | 2 | 3 | HIGH (6) | REDUCE | Focused 2026-08-11 treatment review found one or more required workstation-protection conditions incomplete or unknown. Detailed state is protected locally; complete remediation and repeat the focused review. A non-secret hardening and compromise-response procedure is defined. | 2026-11-09 | OPEN | 2026-11-09 |
 
 ## Assessment notes
 
