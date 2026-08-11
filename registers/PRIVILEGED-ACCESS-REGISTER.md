@@ -5,6 +5,7 @@
 **ISS-IAM-002 status:** `Implemented`  
 **Register state:** Operating  
 **Initial review:** 2026-08-09  
+**Focused treatment review:** 2026-08-10 — GitHub administrative / SSH authority
 **Next required review:** 2026-11-09 or earlier upon material privileged-access change
 
 This register intentionally contains no passwords, private keys, tokens, recovery
@@ -18,8 +19,8 @@ where they are not necessary to establish the governance boundary.
 
 | Access ID | System / authority | Privileged capability | Identity / authority | Current need | Decision | Finding / action | Next review |
 |---|---|---|---|---|---|---|---|
-| ISS-PRIV-001 | Iron Signal Systems GitHub organization | Organization/repository administration | Individually controlled account of the sole project operator | Administer organization settings and current ISS repositories | RETAIN | Authority is currently necessary. `ISS-RISK-014` remains HIGH and open; continued protection/recovery and future privileged-access treatment remain required. | 2026-11-09 |
-| ISS-PRIV-002 | GitHub SSH authentication authority | Authenticated repository access using SSH authority | Local protected SSH authority controlled by the sole project operator | Push/pull and authenticated repository administration | RETAIN | Authority remains necessary. Secret material is not recorded. Revocation/recovery treatment remains part of access and continuity hardening. | 2026-11-09 |
+| ISS-PRIV-001 | Iron Signal Systems GitHub organization | Organization/repository administration | Individually controlled account of the sole project operator | Administer organization settings and current ISS repositories | RETAIN | Focused 2026-08-10 treatment review completed with remediation required. Detailed negative/unknown state is protected locally. `ISS-RISK-014` remains HIGH and open. | 2026-11-09 |
+| ISS-PRIV-002 | GitHub SSH authentication authority | Authenticated repository access using SSH authority | Local protected SSH authority controlled by the sole project operator | Push/pull and authenticated repository administration | RETAIN | Focused 2026-08-10 treatment review completed with remediation required; replacement/revocation procedure is defined but actual recovery was not exercised. | 2026-11-09 |
 | ISS-PRIV-003 | Git commit-signing authority | Produce signed Git history under trusted signing identity | Local protected signing authority controlled by the sole project operator | Sign accepted repository history and governance changes | RETAIN | Authority remains necessary. `ISS-RISK-002` remains HIGH and open; signing revocation/recovery treatment is not closed by this review. | 2026-11-09 |
 | ISS-PRIV-004 | Primary ISS development workstation | sudo/root system administration | Normal user account with sudo/root elevation for administrative tasks | Install software, update the system, and perform required system administration | RETAIN | Privilege is retained for administrative tasks rather than represented as routine root operation. `ISS-RISK-015` remains HIGH and open. | 2026-11-09 |
 | ISS-PRIV-005 | `ironsignalsystems.com` / DNS | Domain and DNS administration | Personally controlled administrative/recovery authority | Maintain the ISS domain and DNS configuration | RETAIN | Authority remains necessary. Administrative and recovery protection remains subject to access and supplier governance. | 2026-11-09 |
