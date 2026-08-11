@@ -4,7 +4,7 @@
 
 **Control ID:** ISS-EXC-001
 **Control:** Security Exception Governance
-**Status:** Defined
+**Status:** Implemented
 **Control owner:** Security Authority
 **Control operator:** Security Authority
 **Approval authority:** Governance Authority
@@ -142,8 +142,15 @@ independent approval.
 
 ## Implementation state
 
-ISS-EXC-001 is currently `Defined`.
+The security-exception policy is active.
 
-It becomes `Implemented` when the exception policy is active, the exception
-register is operating, and the initial current-state exception review is
-retained.
+The exception register is operating.
+
+Initial review `ISS-EXC-REV-001` retained result
+`NO_ACTIVE_EXCEPTIONS_IDENTIFIED`.
+
+ISS-EXC-001 is `Implemented`.
+
+Implementation does not mean exceptions can override authoritative ISRAS
+requirements, that open risks/actions are exceptions, or that future deviations
+are pre-approved.
