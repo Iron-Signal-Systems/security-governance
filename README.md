@@ -36,9 +36,19 @@ structure materially changes.
 
 ## Current status
 
-**Foundation scaffold — not certified and not yet adopted as an accepted ISRAS-governed repository.**
+**Current-boundary organizational security-governance baseline — operating.**
 
-External certification and framework mapping are intentionally out of scope for this foundation scaffold.
+All twelve baseline controls are `Implemented`. The 2026-08-11
+current-boundary hardening pass is complete with explicitly retained open risks.
+
+This status does not mean the controls are `Verified`, independently assessed,
+certified, or externally attested.
+
+This repository is not ISRAS-adopted. Its organizational governance authority
+and ISRAS's engineering-assurance authority remain separate, defined boundaries.
+
+External certification and framework mapping remain intentionally out of scope
+until sufficient operating history and an appropriate assessment boundary exist.
 
 ## Repository layout
 
